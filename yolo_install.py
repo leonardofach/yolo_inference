@@ -7,7 +7,7 @@ import os
 os.system("git clone https://github.com/ultralytics/yolov5")
 
 # Installing the necessary dependencies
-os.system("pip install -r requirements.txt")  # Ignore error messages
+os.system("pip install -r yolov5/requirements.txt")  # Ignore error messages
 
 
 # Replacing Ultralytics' detect.py file with my modified detect.py file
