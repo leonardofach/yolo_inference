@@ -41,10 +41,10 @@ mean = np.mean(times)
 median = np.median(times)
 std = np.std(times)
 
-
+'''
 # Generating a histogram (if necessary)
 plt.style.use("bmh")
-plt.hist(times, bins=12)
+plt.hist(times)
 
 x = []
 y = np.arange(0, total_samples, 1)
@@ -60,7 +60,7 @@ for c in range(0, total_samples):
 plt.plot(x, y, color="green", label=f"Median: {median}")
 plt.legend()
 plt.savefig(str(arguments.name) + "_hist.png", format="png")
-
+'''
 
 # Generating the boxplot graph
 plt.figure(figsize=(10, 8))
